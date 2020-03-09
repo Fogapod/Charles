@@ -121,7 +121,7 @@ class Images(commands.Cog, name="Images"):
         except:
             await ctx.send(get_text(ctx.guild, "images", "images.data_fail"))
 
-    @commandExtra(category="Animals")
+    @commandExtra(category="Animals", aliases=["pussy"])
     @commands.cooldown(rate=1, per=1.5, type=commands.BucketType.user)
     async def cat(self, ctx):
         """ Posts a random cat """
